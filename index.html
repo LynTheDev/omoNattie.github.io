@@ -9,16 +9,31 @@
         <link rel="stylesheet" href="./styles/logo.css">
         <link rel="stylesheet" href="./styles/index.css">
         <link rel="stylesheet" href="./styles/task.css">
-        <link rel="stylesheet" href="./styles/warning.css">
+        <link rel="stylesheet" href="./styles/titlebar.css">
 
         <title>Desktop</title>
     </head>
     <body>
         <noscript>Please enable JavaScript to view the website safely.</noscript>
 
+        <div class="window-about-container">
+            <nav class="about-window draggable" id="abt_window">
+                <nav class="about-main-window">
+                    <nav class="title-bar">
+                        <p class="title-bar-text">
+                            About
+                        </p>
+                        <button type="button" class="btn-exit-window" onclick="closeAbout();">
+                            <p class="button-exit-text">X</p>
+                        </button>
+                    </nav>
+                </nav>
+            </nav>
+        </div>
+
         <nav class="taskbar animate">
             <button type="button" class="btn-task" onclick="startBtn()">
-                <img class="kde-logo" src="assets/imgs/kde.png" alt="no kde for you" id="kde-logo" onclick="stylize();">
+                <img class="kde-logo" src="assets/imgs/kde.png" alt="no kde for you" id="kde-logo">
             </button>
             <span class="clock" id="clock"></span>
 
@@ -32,7 +47,9 @@
                         <nav class="abt-nat" id="abt_nat">
                             <ul class="nat-items">
                                 <li>
-                                    <p>About➭</p>
+                                    <a onclick="openAbout();" class="abt-a">
+                                        <p>About➭</p>
+                                    </a>
                                 </li>
                                 <li>
                                     <p>Contact➭</p>
@@ -54,8 +71,8 @@
                 </ul>
             </nav>
         </nav>
-
-        <script type="text/javascript" src="./scripts/task.js"></script>
-        <script type="text/javascript" src="./scripts/warning.js"></script>
     </body>
+    <script src="./scripts/task.js"></script>
+    <script type="module" src="./scripts/drag.js"></script>
+    <script src="https://unpkg.com/interactjs/dist/interact.min.js"></script>
 </html>

@@ -1,11 +1,23 @@
 "use strict";
 
 
-menu = document.getElementById("menu");
+const menu = document.getElementById("menu");
 menu.classList.toggle("hidden");
 
-abt_nat= document.getElementById("abt_nat");
+const abt_nat = document.getElementById("abt_nat");
 abt_nat.classList.toggle("hidden");
+
+const abt_window = document.getElementById("abt_window");
+abt_window.classList.toggle("hidden");
+
+const openAbout = () => {
+    abt_window.classList.toggle("visible");
+}
+
+const closeAbout = () => {
+    abt_window.classList.remove("visible");
+}
+
 
 const startBtn = () => {
     menu.classList.toggle("visible");
