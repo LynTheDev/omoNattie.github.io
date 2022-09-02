@@ -1,0 +1,25 @@
+.kde-logo {
+    width: 20px;
+    height: 20px;
+    padding: 2px;
+    border-top: 1px solid #ffffff;
+    border-left: 1px solid #ffffff;
+    border-right: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+
+    cursor: pointer;
+}
+
+.kde-logo:active {
+    border-top: 1px solid #000000;
+    border-left: 1px solid #000000;
+    border-right: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+}
+
+.btn-task {
+    background: none;
+    border: none;
+    outline: none;
+    padding: 0px;
+}

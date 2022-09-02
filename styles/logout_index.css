@@ -1,0 +1,26 @@
+@media (min-width: 1280px) {
+    :root {
+      font-size: 20px;
+    }
+}
+  
+@media screen and (min-width: 1720px) {
+    :root {
+        font-size: 25px;
+    }
+}
+
+@font-face {
+    font-family: terminux;
+    src: url(../assets/fonts/Terminus.ttf);
+}
+
+body {
+    margin: 0;
+    background-color: grey;
+}
+
+* { 
+    margin: 0; 
+    padding: 0; 
+}

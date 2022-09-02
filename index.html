@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="./styles/logo.css">
+        <link rel="stylesheet" href="./styles/index.css">
+        <link rel="stylesheet" href="./styles/task.css">
+        <link rel="stylesheet" href="./styles/warning.css">
+
+        <title>Desktop</title>
+    </head>
+    <body>
+        <nav class="taskbar animate">
+            <button type="button" class="btn-task" onclick="startBtn()">
+                <img class="kde-logo" src="assets/imgs/kde.png" alt="no kde for you" id="kde-logo" onclick="stylize();">
+            </button>
+            <span class="clock" id="clock"></span>
+
+            <nav class="menu" id="menu">
+                <ul class="menu-items">
+                    <li>
+                        <a onclick="showNat();" class="nat-a">
+                            <img class="natalie" src="./assets/imgs/people.png" alt="people">
+                            <p class="nat-text">Natalie    ➭</p>
+                        </a>
+                        <nav class="abt-nat" id="abt_nat">
+                            <ul class="nat-items">
+                                <li>
+                                    <p>About</p>
+                                </li>
+                                <li>
+                                    <p>Contact</p>
+                                </li>
+                            </ul>
+                        </nav>
+                    </li>
+                    <div class="next-sequence"></div>
+                    <li>
+                        <img class="lock" src="./assets/imgs/lock.png" alt="byebye">
+                        Lock Screen
+                    </li>
+                    <li>
+                        <a href="./logout.html">
+                            <img class="logout" src="./assets/imgs/logout.png" alt="byebye">
+                            <p class="logout-text">Logout</p>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </nav>
+
+        <script type="text/javascript" src="./scripts/task.js"></script>
+        <script type="text/javascript" src="./scripts/warning.js"></script>
+    </body>
+</html>
