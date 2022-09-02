@@ -16,7 +16,7 @@
     <body>
         <noscript>Please enable JavaScript to view the website safely.</noscript>
 
-        <div class="window-about-container">
+        <div class="window-container">
             <nav class="about-window draggable" id="abt_window">
                 <nav class="about-main-window">
                     <nav class="title-bar">
@@ -27,6 +27,35 @@
                             <p class="button-exit-text">X</p>
                         </button>
                     </nav>
+                    <p class="about-text">
+                        Hello!<br>
+                        I'm 16 and I like to code! I mostly work with websites and c#!<br><br>
+                        I made this site because I love the retro feel of KDE2.<br>
+                        I used windows9x icons because all the kde2 ones are gone.<br><br>
+                        This was made with js and interact.js.<br>
+                        Press the contact button to contact me about any issues!<br><br><br>
+                        Have fun! ❤ <br>-Natalie
+                    </p>
+                </nav>
+            </nav>
+
+            <nav class="contact-window draggable" id="cont_window">
+                <nav class="contact-main-window">
+                    <nav class="title-bar">
+                        <p class="title-bar-text">
+                            Contact
+                        </p>
+                        <button type="button" class="btn-exit-window" onclick="closeContact();">
+                            <p class="button-exit-text">X</p>
+                        </button>
+                    </nav>
+                    <p class="contact-text">
+                        Hello!<br>
+                        This is the contact page!<br><br>
+                        You can contact me via mail, or via discord!<br><br>
+                        omonattie@gmail.com<br>
+                        Natalie <'3#2500
+                    </p>
                 </nav>
             </nav>
         </div>
@@ -52,7 +81,9 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <p>Contact➭</p>
+                                    <a onclick="openContact();" class="contact-a">
+                                        <p>Contact➭</p>
+                                    </a>
                                 </li>
                             </ul>
                         </nav>
