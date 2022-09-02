@@ -18,7 +18,7 @@
 
         <div class="window-container">
             <nav class="about-window draggable" id="abt_window">
-                <nav class="about-main-window">
+                <nav class="main-window">
                     <nav class="title-bar">
                         <p class="title-bar-text">
                             About
@@ -40,7 +40,7 @@
             </nav>
 
             <nav class="contact-window draggable" id="cont_window">
-                <nav class="contact-main-window">
+                <nav class="main-window-small">
                     <nav class="title-bar">
                         <p class="title-bar-text">
                             Contact
@@ -58,6 +58,20 @@
                     </p>
                 </nav>
             </nav>
+
+            <nav class="text-window draggable" id="text_window">
+                <nav class="main-window-big">
+                    <nav class="title-bar-big">
+                        <p class="title-bar-text">
+                            Text Editor
+                        </p>
+                        <button type="button" class="btn-exit-window" onclick="closeText();">
+                            <p class="button-exit-text">X</p>
+                        </button>
+                    </nav>
+                    <textarea class="editor-text" spellcheck="false" cols="30" rows="10"></textarea>
+                </nav>
+            </nav>
         </div>
 
         <nav class="taskbar animate">
@@ -70,24 +84,33 @@
                 <ul class="menu-items">
                     <li>
                         <a onclick="showNat();" class="nat-a">
-                            <img class="natalie" src="./assets/imgs/people.png" alt="people">
+                            <img class="icon" src="./assets/imgs/people.png" alt="people">
                             <p class="nat-text">Natalie    ➭</p>
                         </a>
                         <nav class="abt-nat" id="abt_nat">
                             <ul class="nat-items">
                                 <li>
-                                    <a onclick="openAbout();" class="abt-a">
+                                    <a onclick="openAbout();" class="main-a">
                                         <p>About➭</p>
                                     </a>
                                 </li>
                                 <li>
-                                    <a onclick="openContact();" class="contact-a">
+                                    <a onclick="openContact();" class="main-a">
                                         <p>Contact➭</p>
                                     </a>
                                 </li>
                             </ul>
                         </nav>
                     </li>
+                    <div class="next-sequence"></div>
+                    <ul class="text-editor">
+                        <li>
+                            <a onclick="openText();" class="main-a">
+                                <img class="icon" src="./assets/imgs/text.png" alt="people">
+                                <p>Text Editor</p>
+                            </a>
+                        </li>
+                    </ul>
                     <div class="next-sequence"></div>
                     <li>
                         <img class="lock" src="./assets/imgs/lock.png" alt="byebye">

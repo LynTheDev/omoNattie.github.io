@@ -14,6 +14,14 @@
     display: block;
 }
 
+.text-window.hidden {
+    display: none;
+}
+
+.text-window.visible {
+    display: block;
+}
+
 .title-bar {
     position: fixed;
 
@@ -62,7 +70,7 @@
     border-bottom: 1px solid #ffffff;
 }
 
-.about-main-window {
+.main-window {
     position: absolute;
 
     width: 20.75rem;
@@ -71,21 +79,17 @@
     background-color: #c5c2c6;
 }
 
-.contact-main-window {
+.main-window-small {
     position: absolute;
 
     width: 20.75rem;
-    height: 12rem;
+    height: 11rem;
 
     background-color: #c5c2c6;
 }
 
 
-.abt-a {
-    cursor: pointer;
-}
-
-.contact-a {
+.main-a {
     cursor: pointer;
 }
 
@@ -103,4 +107,44 @@
 
     position: absolute;
     font-family: terminux;
+}
+
+.main-window-big {
+    position: absolute;
+
+    width: 30.75rem;
+    height: 25rem;
+
+    background-color: #c5c2c6;
+}
+
+.editor-text {
+    margin-top: 1.9rem;
+    margin-left: 0.2rem;
+
+    position: absolute;
+    font-family: terminux;
+
+    width: 30.2rem;
+    height: 22.65rem;
+
+    background: none;
+
+    resize: none;
+}
+
+.title-bar-big {
+    position: fixed;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 3px;
+
+    width: 30rem;
+
+    border: 3px solid #c5c2c6;
+
+    background-image: linear-gradient(to right, #4262d3, #284ac4);
 }

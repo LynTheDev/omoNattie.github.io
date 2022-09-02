@@ -2,31 +2,45 @@
 
 
 const menu = document.getElementById("menu");
-menu.classList.toggle("hidden");
-
-const abt_nat = document.getElementById("abt_nat");
-abt_nat.classList.toggle("hidden");
-
-const abt_window = document.getElementById("abt_window");
-abt_window.classList.toggle("hidden");
-
 const cont_window = document.getElementById("cont_window");
+const abt_window = document.getElementById("abt_window");
+const text_window = document.getElementById("text_window");
+const abt_nat = document.getElementById("abt_nat");
+
+menu.classList.toggle("hidden");
+abt_nat.classList.toggle("hidden");
+abt_window.classList.toggle("hidden");
 cont_window.classList.toggle("hidden");
+text_window.classList.toggle("hidden");
+
+
 
 const openAbout = () => {
-    abt_window.classList.toggle("visible");
+    abt_window.classList.toggle("visible"); //for the about window
 }
 
 const closeAbout = () => {
-    abt_window.classList.remove("visible");
+    abt_window.classList.remove("visible"); // close about window
 }
 
 const openContact = () => {
-    cont_window.classList.toggle("visible");
+    cont_window.classList.toggle("visible"); //for the contact window
 }
 
 const closeContact = () => {
-    cont_window.classList.remove("visible");
+    cont_window.classList.remove("visible"); // close contact window
+}
+
+const openText = () => {
+    text_window.classList.toggle("visible"); //for the text window
+}
+
+const closeText = () => {
+    text_window.classList.remove("visible"); // close text window
+}
+
+const showNat = () => {
+    abt_nat.classList.toggle("visible"); // show the nat menu
 }
 
 const startBtn = () => {
@@ -34,11 +48,6 @@ const startBtn = () => {
 
     abt_nat.classList.remove("visible");
 }
-
-const showNat = () => {
-    abt_nat.classList.toggle("visible");
-}
-
 
 const clock = () => {
     let date = new Date();
