@@ -20,4 +20,3 @@ interact('.draggable').draggable({
         },
     }
 })
-

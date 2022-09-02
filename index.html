@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="./styles/index.css">
         <link rel="stylesheet" href="./styles/task.css">
         <link rel="stylesheet" href="./styles/titlebar.css">
+        <link rel="stylesheet" href="./styles/desktop.css">
 
         <title>Desktop</title>
     </head>
@@ -72,12 +73,33 @@
                     <textarea class="editor-text" spellcheck="false" cols="30" rows="10"></textarea>
                 </nav>
             </nav>
+
+            <nav class="trash-window draggable" id="trash_window">
+                <nav class="main-window-small">
+                    <nav class="title-bar">
+                        <p class="title-bar-text">
+                            Trash
+                        </p>
+                        <button type="button" class="btn-exit-window" onclick="closeTrash();">
+                            <p class="button-exit-text">X</p>
+                        </button>
+                    </nav>
+                    <p class="contact-text">
+                        Empty
+                    </p>
+                </nav>
         </div>
 
         <nav class="taskbar animate">
             <button type="button" class="btn-task" onclick="startBtn()">
                 <img class="kde-logo" src="assets/imgs/kde.png" alt="no kde for you" id="kde-logo">
             </button>
+            <a onclick="openTrash();" class="main-a">
+                <div class="trash-desktop draggable">
+                    <img class="desktop-icon" src="./assets/imgs/trash.png">
+                    <p class="icon-text">Trash</p>
+                </div>
+            </a>
             <span class="clock" id="clock"></span>
 
             <nav class="menu" id="menu">

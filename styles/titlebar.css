@@ -22,6 +22,14 @@
     display: block;
 }
 
+.trash-window.hidden {
+    display: none;
+}
+
+.trash-window.visible {
+    display: block;
+}
+
 .title-bar {
     position: fixed;
 

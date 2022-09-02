@@ -1,0 +1,12 @@
+.icon-text {
+    font-family: terminux;
+    color: white;
+}
+
+.trash-desktop {
+    position: absolute;
+    bottom: 100%;
+    right: 1%;
+    padding: 10px;
+    padding-bottom: 20px;
+}

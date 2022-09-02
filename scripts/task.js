@@ -5,6 +5,7 @@ const menu = document.getElementById("menu");
 const cont_window = document.getElementById("cont_window");
 const abt_window = document.getElementById("abt_window");
 const text_window = document.getElementById("text_window");
+const trash_window = document.getElementById("trash_window");
 const abt_nat = document.getElementById("abt_nat");
 
 menu.classList.toggle("hidden");
@@ -12,6 +13,8 @@ abt_nat.classList.toggle("hidden");
 abt_window.classList.toggle("hidden");
 cont_window.classList.toggle("hidden");
 text_window.classList.toggle("hidden");
+trash_window.classList.toggle("hidden");
+
 
 
 
@@ -37,6 +40,14 @@ const openText = () => {
 
 const closeText = () => {
     text_window.classList.remove("visible"); // close text window
+}
+
+const openTrash = () => {
+    trash_window.classList.toggle("visible"); //for the trash window
+}
+
+const closeTrash = () => {
+    trash_window.classList.remove("visible"); // close trash window
 }
 
 const showNat = () => {
